@@ -51,6 +51,18 @@ Dit kan met onderstaande SQL commando.
   
 Bovenstaande testen werden uitgevoerd om te voldoen aan de vereisten opgesteld in de opdracht. Creation date_time wordt automatisch ingevuld in tabel. Verder is het alcohol percentage geen vereiste.
 
+
+Starten van Java Applicatie.
+Rechtermuisklik op BeverageAPI -> Run As -> Spring Boot App
+Eens de Spring Boot App gestart is kunnen de onderstaande operaties toegepast worden via de browser van de PC.
+Randvoorwaarde: SQL tabel moet lokaal beschikbaar zijn. 
+SQL Connectie string kan aangepast worden via file application.properties onder src/main/resources
+Standaard worden onderstaande parameters toegepast.
+	spring.datasource.url=jdbc:sqlserver://localhost:1433;database=Beverage;		-- Connection string. SQL draait op poort 1433. Database name = Beverage
+	spring.datasource.username=testaccount							-- username (SQL authentication) om Beverage tabel te benaderen
+	spring.datasource.password=Service123							-- overeenkomende wachtwoord voor testaccount
+
+
 **Operatie 1
 Gelijkaardige acties, zoals bovenstaande zijn ook mogelijk via de URL van de browser.
 Een lijst met alle beverages beschikbaar in de SQL tabel kan opgevraagd worden op onderstaande manier.
